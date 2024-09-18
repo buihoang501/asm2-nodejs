@@ -1,0 +1,124 @@
+/*Header Styles */
+.header {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 96px;
+}
+
+.header > h2 {
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+.header > p {
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.header > button {
+  outline: none;
+  border: none;
+
+  background-color: #0071c2;
+}
+
+.header > button > span {
+  display: inline-block;
+  width: 0.5rem;
+  color: #fff;
+}
+.header > button > a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.5rem;
+  font-size: 0.875rem;
+  color: #fff;
+}
+
+/*Header Search Styles */
+.search-container {
+  width: 100%;
+  position: absolute;
+  bottom: -18%;
+  left: 0;
+  background-color: #fff;
+  border: 3px solid #febb00;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  padding: 12px 24px;
+}
+
+.place,
+.date,
+.person {
+  flex: 1;
+}
+
+.place > input,
+.date > input,
+.person > input {
+  width: 80%;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  color: #333;
+  font-weight: 500;
+}
+
+.person {
+  display: flex;
+}
+
+.place > input::placeholder {
+  color: #888;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.date > input::placeholder,
+.person > input::placeholder {
+  color: #d8d8d8;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.place > i {
+  color: #d3d3d3;
+}
+
+.date,
+.person {
+  color: #d8d8d8;
+}
+
+.icon {
+  margin-right: 6px;
+}
+
+.search-container > button {
+  border: none;
+  background-color: #0071c2;
+  color: #fff;
+  padding: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Date Style */
+
+.date-style {
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -350px;
+}
+
+@media screen and (max-width: 1199px) {
+  .header {
+    padding: 0 24px 96px 24px;
+  }
+}

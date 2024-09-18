@@ -1,0 +1,63 @@
+/* Auth Form Styling */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-form > h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.auth-form > form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.auth-form .form-control > input {
+  border: 1px solid #ccc;
+  padding: 1rem 0.5rem;
+  width: 12rem;
+  max-width: 100%;
+  border-radius: 0.125rem;
+}
+.auth-form .form-control > input:focus {
+  outline: none;
+}
+
+.auth-form > form > button {
+  outline: 0;
+  border: 0;
+  width: 12rem;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: #0071c2;
+  cursor: pointer;
+  font-size: 14px;
+  width: 100%;
+}
+
+.auth-form > .error {
+  min-width: 12rem;
+  padding: 1rem;
+  border: 1px solid #bbb;
+  border-radius: 0.25rem;
+  margin-top: 1rem;
+  color: red;
+}
+
+.auth-form > .hide {
+  display: none;
+}

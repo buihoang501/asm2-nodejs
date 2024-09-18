@@ -1,0 +1,111 @@
+/* Search List Item CSS */
+.item-container {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.item-container > div:first-child {
+  width: 192px;
+  margin-right: 16px;
+}
+
+.item-container > div:first-child > a > img {
+  max-width: 100%;
+  object-fit: cover;
+  height: 200px;
+}
+
+/* description */
+
+.desc {
+  flex: 1;
+}
+
+.desc > h3 > a {
+  text-decoration: none;
+  color: #0071c2;
+  margin-bottom: 10px;
+}
+.desc > p {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.desc > p:nth-child(2) {
+  font-weight: 400;
+}
+
+.desc > p:last-child {
+  color: #008009;
+}
+
+/* rate */
+.rate {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.rate > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rate > div > p:first-child {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.rate > div > p:last-child {
+  color: #fff;
+  padding: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #003580;
+}
+
+.rate > div:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.rate > div:last-child > p:first-child {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.rate > div:last-child > p:nth-child(2) {
+  font-size: 13px;
+  color: #888;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.rate > div:last-child > a {
+  border: none;
+  outline: none;
+  padding: 9px 23px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: #0071c2;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.label {
+  color: #013a05;
+  font-size: 16px !important;
+  font-weight: 500;
+}
+
+.city {
+  color: #000;
+  font-weight: 500;
+  font-size: 16px;
+}

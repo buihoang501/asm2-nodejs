@@ -1,0 +1,79 @@
+/* Transactions Styling */
+.transactions {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 0;
+}
+.transactions > .empty-transaction {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.transactions > .empty-transaction > h3 {
+  color: #4340e2;
+  font-size: 1.5rem;
+}
+
+.transactions > .empty-transaction > p {
+  color: #074d5d;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.transactions > .table-transaction table,
+.transactions > .table-transaction th,
+.transactions > .table-transaction td {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+}
+
+.transactions > .table-transaction th {
+  background-color: #33a4c1;
+  color: #fff;
+}
+
+.transactions h3 {
+  margin-bottom: 1rem;
+}
+
+.transactions > .table-transaction th {
+  font-weight: 500;
+}
+
+.transactions > .table-transaction .background-gray {
+  background-color: #f2f2f2;
+}
+
+.transactions > .table-transaction th,
+.transactions > .table-transaction td {
+  text-align: left;
+  padding: 0.5rem 1rem 0.5rem 0.5rem;
+}
+.transactions > .table-transaction td {
+  font-weight: 500;
+  color: #07040f;
+}
+.transactions > .table-transaction td .booked,
+.checkin,
+.checkout {
+  color: red;
+  font-weight: 500;
+  display: inline-block;
+  color: #108c07;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.transactions > .table-transaction td .booked {
+  background-color: #f69685;
+}
+
+.transactions > .table-transaction td .checkin {
+  background-color: #39d138;
+}
+.transactions > .table-transaction td .checkout {
+  background-color: #d3d0f2;
+}

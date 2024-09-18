@@ -1,0 +1,95 @@
+/*Navbar CSS*/
+.auth-navbar {
+  min-height: 62px;
+  padding-top: 6px;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title-container {
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.title-container span {
+  color: #fff;
+  margin-right: 1rem;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.title > a {
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+/* button styles */
+.register-btn,
+.login-btn {
+  background-color: #efefef;
+  color: #003580;
+  border: none;
+  padding: 4px 8px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.register-btn {
+  margin-right: 24px;
+}
+
+/*Navbar Item CSS*/
+.item-container {
+  display: flex;
+  list-style: none;
+  padding-bottom: 28px;
+}
+
+.item {
+  margin-right: 32px;
+  color: #fff;
+  font-weight: 400;
+  padding: 10px;
+}
+
+.item:last-child {
+  margin-right: 0;
+}
+
+.item.active {
+  border-radius: 20px;
+  border: 1px solid #fff;
+}
+
+.icon {
+  margin-right: 8px;
+}
+
+@media screen and (max-width: 1199px) {
+  .navbar-container {
+    padding: 0 24px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .item {
+    margin-right: 4px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .item {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+}

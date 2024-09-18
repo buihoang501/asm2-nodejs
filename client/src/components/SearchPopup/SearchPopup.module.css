@@ -1,0 +1,101 @@
+/* Styling for SearchPopup Component */
+.search-popup {
+  margin: 32px 0;
+  min-width: 254px;
+}
+
+.container {
+  width: 100%;
+
+  background-color: #febb00;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.container > h3 {
+  color: #575b4b;
+  margin-top: 6px;
+  margin-bottom: 3px;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control > label {
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.form-control > input {
+  padding: 9px 4px;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  font-weight: 500;
+}
+.form-control > input::placeholder {
+  color: #000;
+}
+
+.date > input::placeholder {
+  color: #d8d8d8;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.date {
+  margin-top: 8px;
+}
+.date > input {
+  margin-top: 8px;
+  padding: 9px 4px;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  font-weight: 500;
+  width: 100%;
+}
+
+.other-form-control {
+  display: flex;
+  margin-top: 12px;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.other-form-control > label {
+  color: #645e4d;
+  font-size: 13px;
+}
+
+.other-form-control > input {
+  max-width: 55px;
+  padding: 4px;
+}
+
+.search-form > button {
+  margin-top: 28px;
+  width: 100%;
+  color: #fff;
+  border: 0;
+  font-size: 13px;
+  background-color: #0071c3;
+  text-align: center;
+  padding: 9px 0;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.search-form {
+  position: relative;
+}
+
+.search-form > .date-style {
+  position: absolute;
+  top: 6rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}

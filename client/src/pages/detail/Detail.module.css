@@ -1,0 +1,124 @@
+.detail {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container {
+  margin: 32px 0 50px 0;
+}
+
+.container > div:first-child {
+  display: flex;
+  justify-content: space-between;
+}
+.container > div:first-child > h2 {
+  margin-bottom: 10px;
+}
+.container > div:first-child > button {
+  border: none;
+  display: block;
+  color: #fff;
+  font-size: 14px;
+  background-color: #0071c2;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container > p:nth-child(2) {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.container > p:nth-child(2) > i {
+  margin-right: 8px;
+}
+.container > p:nth-child(3) {
+  color: #0071c3;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.container > p:nth-child(4) {
+  color: #008009;
+  margin-bottom: 10px;
+}
+
+/* Image CSS */
+
+.img-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+
+.img-container > img {
+  width: 33.05%;
+  height: 224px;
+  object-fit: cover;
+  margin: 0 5px 5px 0;
+}
+.img-container > img:nth-child(3),
+.img-container > img:nth-child(6) {
+  margin-right: 0;
+}
+
+/* Description */
+
+.desc {
+  display: flex;
+  justify-content: space-between;
+}
+
+.desc > div:first-child {
+  margin-right: 20px;
+  flex: 1;
+}
+
+.desc > div:first-child > h2 {
+  margin-bottom: 20px;
+}
+.desc > div:first-child > p {
+  font-size: 14px;
+}
+
+.desc > div:last-child {
+  width: 278px;
+  padding: 20px;
+  background-color: #ebf3ff;
+}
+.desc > div:last-child > h4 {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.desc > div:last-child > p {
+  font-size: 15px;
+  color: #333;
+  font-weight: 500;
+  margin-bottom: 20px;
+  letter-spacing: 1.5;
+  line-height: 1.5;
+}
+
+.desc > div:last-child > h3 {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.desc > div:last-child > h3 > span {
+  font-weight: 400;
+  color: #555;
+}
+.desc > div:last-child > button {
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  background-color: #0071c3;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+}
