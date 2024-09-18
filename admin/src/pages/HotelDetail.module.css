@@ -1,0 +1,49 @@
+/* Admin styling */
+
+.hotel-detail {
+  width: 100%;
+}
+.hotel-detail > header {
+  height: 60px;
+  border-bottom: 1px solid #e6e3e3;
+}
+
+.hotel-detail main {
+  display: flex;
+}
+
+.info {
+  margin-left: 300px;
+  padding: 1.5rem;
+  width: calc(100% - 300px);
+}
+
+/* Responsive */
+@media screen and (max-width: 1248px) {
+  .index {
+    padding-right: 1rem;
+  }
+  .info {
+    margin-left: 200px;
+    padding: 1.2rem 0 0 1.2rem;
+    width: calc(100% - 200px);
+  }
+  .info > div {
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .info {
+    margin-left: 0;
+
+    width: 100%;
+  }
+}
+@media screen and (max-width: 732px) {
+  .info {
+    margin-left: 0;
+
+    width: 100%;
+  }
+}

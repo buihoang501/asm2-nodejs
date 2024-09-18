@@ -1,0 +1,147 @@
+.sidebar {
+  position: fixed;
+  width: 300px;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-right: 1px solid #e6e3e3;
+  background-color: #fff;
+}
+.toggle {
+  display: none;
+}
+
+.sidebar > h1 {
+  line-height: 60px;
+  user-select: none;
+  text-align: center;
+  height: 60px;
+  color: #643aff;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #e6e3e3;
+}
+
+.sidebar > .content {
+  padding: 1rem 0 0 1rem;
+}
+.sidebar > .content ul {
+  list-style: none;
+}
+.sidebar > .content > div h3 {
+  font-size: 1rem;
+  color: #555;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.sidebar > .content ul {
+  margin: 0.5rem 0 1rem 0.25rem;
+}
+
+.sidebar > .content ul li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  cursor: pointer;
+  padding: 0.75rem 0 0.75rem 0.75rem;
+}
+
+.sidebar > .content ul li:hover,
+.sidebar > .content .logout > button:hover,
+.sidebar > .content ul li:hover > p {
+  background-color: #ccc;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.sidebar > .content ul li:hover > p,
+.sidebar > .content .logout > button:hover {
+  color: #2e47d8;
+}
+
+.sidebar > .content ul p {
+  text-decoration: none;
+  color: #555555;
+}
+
+.sidebar > .content svg {
+  width: 20px;
+  height: 20px;
+}
+.sidebar > .content svg path {
+  fill: #643aff;
+}
+.sidebar > .content ul li > i {
+  width: 20px;
+  height: 20px;
+  color: #643aff;
+}
+
+.sidebar > .content .logout > button > i {
+  color: #643aff;
+}
+.sidebar > .content .logout > button {
+  margin-top: 0.25rem;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  color: #555;
+  padding: 0.75rem 0 0.75rem 0.75rem;
+  width: 100%;
+  background-color: transparent;
+  font-size: 1rem;
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+input[type="checkbox"],
+.sidebar > h1 > label {
+  display: none;
+}
+
+/* Responsive */
+@media screen and (max-width: 1248px) {
+  .sidebar {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .sidebar {
+    left: -300px;
+    width: 300px;
+    transition: all ease-in 0.3s;
+  }
+  .toggle {
+    display: flex;
+    position: fixed;
+    top: 1.5rem;
+    left: 0.5rem;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    background-color: #643aff;
+    cursor: pointer;
+  }
+  .toggle > i {
+    font-size: 1rem;
+    color: #fff;
+  }
+
+  input[type="checkbox"]:checked ~ .sidebar {
+    z-index: 10;
+    left: 0;
+  }
+
+  .sidebar > h1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.5rem;
+    align-items: center;
+  }
+  .sidebar > h1 > label {
+    display: block;
+    cursor: pointer;
+  }
+}

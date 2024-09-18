@@ -1,0 +1,13 @@
+/* Admin styling */
+
+.admin {
+  width: 100%;
+}
+.admin > header {
+  height: 60px;
+  border-bottom: 1px solid #e6e3e3;
+}
+
+.admin main {
+  display: flex;
+}

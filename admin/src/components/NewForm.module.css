@@ -1,0 +1,86 @@
+/* New form styling */
+.form > form {
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 0.5rem 2rem;
+}
+
+.form .banner {
+  width: 100%;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  color: #d0d0d0;
+}
+
+.form > form > div {
+  justify-content: space-between;
+  display: flex;
+}
+.form > form .form-control {
+  margin-bottom: 1rem;
+}
+.form > form .form-control > label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.9rem;
+  color: #333;
+}
+.form > form .form-control > label > input {
+  width: 100%;
+
+  min-width: 360px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 0.25rem 0.5rem;
+  outline: none;
+}
+.form > form .form-control > label > select {
+  width: 60px;
+  outline: none;
+}
+
+.form > form .form-control textarea {
+  resize: none;
+  outline: none;
+}
+.form > form .form-control textarea::placeholder {
+  padding-left: 0.5rem;
+}
+.form > form .form-control .choose-hotel {
+  width: auto;
+}
+
+.form > form .rooms {
+  width: 100%;
+}
+.form > form .rooms > label {
+  width: 100%;
+}
+
+.form > form .submit {
+  margin-top: 2rem;
+  width: 160px;
+  padding: 0.5rem 0.75rem;
+  outline: none;
+  border: none;
+  color: #fff;
+  background-color: #008080;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Responsive */
+@media (max-width: 840px) {
+  .form > form .form-control > label > input {
+    max-width: 250px;
+    width: 100%;
+    min-width: unset;
+  }
+  .form > form > div {
+    gap: 1rem;
+  }
+}
